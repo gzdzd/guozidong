@@ -1,9 +1,15 @@
 package lost;
+
+import java.util.Date;
+
 public  class Booklost extends Lost {//对Lost进行继承
-   String shuming;
-   long price;
-    public Booklost( String location, long time,String shuming, long price) {
-        super(location, time);
+   private String shuming;
+   private long price;
+   public Booklost(){
+       //无参构造
+   }
+    public Booklost(String location,String shuming, long price) {
+        super(location);
         this.setshuming(shuming);
         this.setprice(price);
     }
